@@ -1,0 +1,231 @@
+*
+h1,h3{
+	font-weight:700;
+	text-transform:uppercase;
+	}
+body,header p{
+	font-family:Neucha,sans-serif;
+}
+h1,h3{
+	font-family:'Cabin Sketch',sans-serif;
+	color:#575757
+}
+a{color:inherit}
+h1{
+	font-size:3em;
+	margin-bottom:.1em;
+	color:white;
+	text-align:center;
+	text-transform: none;
+}
+
+
+#boxMove{
+	height: 50vh;
+	width: 40vw;
+	background-color: #006A4E;
+	margin-top: 10vh;
+	margin-left:25%;
+    animation-name: boxMove;
+    animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.66,.06,1,.63);
+	animation-fill-mode: forwards;
+
+	
+}
+
+#boxround{
+	position: absolute;
+	top: 16vw;
+	right: 40%;
+	height: 40vh;
+	width: 20vw;
+	border-radius: 40%;
+
+	animation-name: boxRound;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.66,.06,1,.63);
+	animation-fill-mode: forwards;
+}
+#boxround img{
+	border-radius: 50%;
+	top: 16vw;
+	right:40%;
+	height: 40vh;
+	width: 20vw;
+}
+.voice{
+	font-family: Amita;
+}
+@keyframes boxMove {
+	0%{
+		margin-left: -40vw;
+		transform: scale(0) rotate(-360deg);
+	}
+
+	100%{
+		margin-left: 19vw;
+		transform:scale(1) rotate(0deg);
+		
+	}
+}
+
+@keyframes boxRound {
+	0%{
+		top:-15vw;
+		transform: scale(0);
+	}
+
+	100%{
+		top:17vw;
+		transform:scale(1);
+	}
+}
+
+h3{
+	font-size:1.5em;
+	margin-top:1.5em;
+	margin-bottom:.5em
+}
+header p{
+	font-size:1.4em;
+	color:#203945;
+	margin:0 0 .5em
+}
+dl,section a,section p{
+	font-size:1.1em;
+	color:#203945
+}
+section p{
+	line:5px
+}
+.new{
+	color:#e67e22
+}
+a,header a:hover,
+section a a:hover{
+	-webkit-transition:border-bottom .4s ease-out,color .4s ease-out;
+	-moz-transition:border-bottom .4s ease-out,color .4s ease-out;
+	transition:border-bottom .4s ease-out,color .4s ease-out;
+	border-bottom:2px solid #c0392b
+}
+	body{
+		background:url(paper.jpg);
+		animation:animate-background linear 15s infinite
+	}
+	@keyframes animate-background{from{background-position:0}to{background-position:-300px}}
+	header,section{
+		width:80%;
+		margin-left:10%;
+		margin-top:2em
+	}
+	section a,section p{
+		margin:0 0 1em;
+		line-height:1.3em
+	}
+	.facebook :hover{
+		color:#3B5998;
+		border-bottom:2px solid #3B5998
+	}
+	.twitter :hover{
+		color:#1DA1F2;
+		border-bottom:2px solid #1DA1F2
+	}
+	.linkedin :hover{
+		color:#0077B5;
+		border-bottom:2px solid #0077B5
+	}
+	.mail :hover{
+		color:#c0392b;
+		border-bottom:2px solid #c0392b
+	}
+	.bit :hover{
+		color:#205081;
+		border-bottom:2px solid #205081
+	}
+	.git :hover{
+		color:#333;
+		border-bottom:2px solid #333
+	}
+	.stack :hover{
+		color:#F48024;
+		border-bottom:2px solid #F48024
+	}
+	.sass :hover{
+		color:#CF649A;
+		border-bottom:2px solid #CF649A
+	}
+	.postcss :hover{
+		color:#DD3A0A;
+		border-bottom:2px solid #DD3A0A
+	}
+	.bootstrap :hover{
+		color:#7945C6;
+		border-bottom:2px solid #7945C6
+	}
+	.bulma :hover{
+		color:#00D1B2;
+		border-bottom:2px solid #00D1B2
+	}
+	.html :hover{
+		color:#E54F27;
+		border-bottom:2px solid #E54F27
+	}
+	.css :hover{
+		color:#0370B9;
+		border-bottom:2px solid #0370B9
+	}
+	.js :hover{
+		color:#D6BA33;
+		border-bottom:2px solid #D6BA33
+	}
+	.node :hover{
+		color:#026E00;
+		border-bottom:2px solid #026E00
+	}
+	.php :hover{
+		color:#777BB3;
+		border-bottom:2px solid #777BB3
+	}
+	.sql :hover{
+		color:#2677C7;
+		border-bottom:2px solid #2677C7
+	}
+	.regex :hover{
+		color:#00BCD4;
+		border-bottom:2px solid #00BCD4
+	}
+	.ractive :hover{
+		color:#729D34;
+		border-bottom:2px solid #729D34
+	}
+	.svelte :hover{
+		color:#AA1E1E;
+		border-bottom:2px solid #AA1E1E
+	}
+	.jquery :hover{
+		color:#78CFF5;
+		border-bottom:2px solid #78CFF5
+	}
+	.react :hover{
+		color:#61DAFB;
+		border-bottom:2px solid #61DAFB
+	}
+	.grunt :hover{
+		color:#FBA919;
+		border-bottom:2px solid #FBA919
+	}
+	.npm :hover{
+		color:#CB3837;
+		border-bottom:2px solid #CB3837
+	}
+	.links span:not(:last-child)::after,dd span:not(:last-child)::after{content:' / '}
+	a{text-decoration:none;border-bottom:2px solid transparent}
+	@media only screen and (max-width:400px){h1{font-size:2em}
+	header p{font-size:1.2em}}
+	.footer{
+		margin-top: 10vh;
+	}
+
